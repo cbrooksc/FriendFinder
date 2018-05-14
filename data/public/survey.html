@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>FriendFinder</title>
+
+    <!-- Latest compiled and minified CSS & JS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Font Awesome Glyphicons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+    <!-- Chosen -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h2>Survey Questions</h2>
+        <hr>
+
+        <h3>
+            <strong>About You</strong>
+        </h3>
+        <h4>Name (Required)</h4>
+        <input type="text" id="name" class="form-control" required>
+
+        <h4>Link to Photo Image (Required)</h4>
+        <input type="text" id="photo" class="form-control" required>
+
+        <hr>
+
+        <h3>
+            <strong>Question 1</strong>
+        </h3>
+        <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
+        <select class="chosen-select" id="q1">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 2</strong>
+        </h3>
+        <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
+        <select class="chosen-select" id="q2">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 3</strong>
+        </h3>
+        <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
+        <select class="chosen-select" id="q3">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 4</strong>
+        </h3>
+        <h4>You rarely do something just out of sheer curiosity.</h4>
+        <select class="chosen-select" id="q4">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 5</strong>
+        </h3>
+        <h4>People can rarely upset you.</h4>
+        <select class="chosen-select" id="q5">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 6</strong>
+        </h3>
+        <h4>It is often difficult for you to relate to other people’s feelings.</h4>
+        <select class="chosen-select" id="q6">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+
+        <h3>
+            <strong>Question 7</strong>
+        </h3>
+        <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
+        <select class="chosen-select" id="q7">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 8</strong>
+        </h3>
+        <h4>You rarely get carried away by fantasies and ideas.</h4>
+        <select class="chosen-select" id="q8">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 9</strong>
+        </h3>
+        <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
+        <select class="chosen-select" id="q9">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <h3>
+            <strong>Question 10</strong>
+        </h3>
+        <h4>You feel more energetic after spending time with a group of people.</h4>
+        <select class="chosen-select" id="q10">
+            <option value=""></option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5 (Strongly Agree)</option>
+        </select>
+
+        <br>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit">
+            <i class="fa fa-check-circle" aria-hidden="true"></i>
+            Submit</button>
+
+        <hr>
+        <footer class="footer">
+            <div class="container">
+                <p>
+                    <a href="/api/friends">API Friends List</a> |
+                    <a href="https://github.com/""/friendfinder">GitHub Repo</a>
+                </p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="results-modal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h2 class="modal-title">
+                        <strong>Best Match</strong>
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <h2 id="match-name"></h2>
+                    <img id="match-img" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg" alt="">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // Chosen CSS
+        var config = {
+            ".chosen-select": {},
+            ".chosen-select-deselect": {
+                allow_single_deselect: true
+            },
+            ".chosen-select-no-single": {
+                disable_search_threshold: 10
+            },
+            ".chosen-select-no-results": {
+                no_results_text: "Oops, nothing found!"
+            },
+            ".chosen-select-width": {
+                width: "95%"
+            }
+        };
+
+        for (var selector in config) {
+            $(selector).chosen(config[selector]);
+        }
+
+        // Capture the form inputs
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+
+            // Form validation
+            function validateForm() {
+                var isValid = true;
+                $(".form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+
+                $(".chosen-select").each(function () {
+
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+
+            // If all required fields are filled
+            if (validateForm()) {
+                // Create an object for the user"s data
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+
+                // AJAX post the data to the friends API.
+                $.post("/api/friends", userData, function (data) {
+
+                    // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+                    $("#match-name").text(data.name);
+                    $("#match-img").attr("src", data.photo);
+
+                    // Show the modal with the best match
+                    $("#results-modal").modal("toggle");
+
+                });
+            } else {
+                alert("Please fill out all fields before submitting!");
+            }
+        });
+
+
+                    $(document).ready(function() {
+    // Friends API Query
+    // ==================
+
+    function getFriendsData() {
+      var queryURL = "http://localhost:3000/api/friends";
+      $.ajax({
+        url: queryURL,
+        method: "GET"
+      }).done(function(result) {
+        readJSON(result);
+      });
+    }
+
+    // ================
+    // Process API Data
+    // ================
+    function Answers(result) {
+      // own answers will be last result item
+      var i = result.length - 1;
+      var Answers = [];
+      var match = [];
+      // get each question answer as a single number (as string)
+      ownAnswers.push(result[i].q1.charAt(0));
+      ownAnswers.push(result[i].q2.charAt(0));
+      ownAnswers.push(result[i].q3.charAt(0));
+      ownAnswers.push(result[i].q4.charAt(0));
+      ownAnswers.push(result[i].q5.charAt(0));
+      ownAnswers.push(result[i].q6.charAt(0));
+      ownAnswers.push(result[i].q7.charAt(0));
+      ownAnswers.push(result[i].q8.charAt(0));
+      ownAnswers.push(result[i].q9.charAt(0));
+      ownAnswers.push(result[i].q10.charAt(0));
+
+      // collect the rest of the user answers, compare them to Answers, and store the resulting score in an array
+      for (var i = 0; i < result.length - 1; i++) {
+        var array = [];
+        var score = 0;
+        // get each other user answer as a single number (as string)
+        array.push(result[i].q1.charAt(0));
+        array.push(result[i].q2.charAt(0));
+        array.push(result[i].q3.charAt(0));
+        array.push(result[i].q4.charAt(0));
+        array.push(result[i].q5.charAt(0));
+        array.push(result[i].q6.charAt(0));
+        array.push(result[i].q7.charAt(0));
+        array.push(result[i].q8.charAt(0));
+        array.push(result[i].q9.charAt(0));
+        array.push(result[i].q10.charAt(0));
+
+        // compare the difference between ownAnswers and each other user's answers by looping through and cross-checking each array item
+        for (var x = 0; x < Answers.length; x++) {
+          var difference = parseInt(Answers[x]) - parseInt(array[x]);
+          // tally the total score as each item checked (absolute value!)
+          score += Math.abs(difference);
+        }
+        // add the final score of each other-user to the match array (index of score in match array will match index in the api friends data)
+        match.push(score);
+      }
+
+      // minimum value in match array
+      var bestScore = Math.min.apply(null, match);
+      // find the indices at all minimums in the final match array (can be multiples)
+      var bestMatches = [];
+      for (var i = 0; i < match.length; i++) {
+        if (match[i] === bestScore) {
+          bestMatches.push(result[i]);
+        }
+      }
+
+      // pass the best matches array to the display function to render their information on the page
+      displayModal(bestMatches);
+    }
+
+    // Display
+    // ===============
+
+    function displayModal(bestMatches) {
+      $("#match-modal").modal("toggle");
+      var modalContent = $("<div>");
+
+      if (bestMatches.length === 0) {
+        var noMatch = "<p>Sorry you are not a match try again!</p>";
+        modalContent.append(noMatch);
+      } else {
+        for (var i = 0; i < bestMatches.length; i++) {
+          var matchName =
+            '<h3 class="match-name">' + bestMatches[i].name + "</h3>";
+          var matchImage =
+            '<img class="profile-img" src=' +
+            bestMatches[i].photoURL +
+            " onerror=\"this.src='https://thumbs.dreamstime.com/z/error-broken-cogwheel-message-d-illustration-34907908.jpg\">";
+          modalContent
+            .append(matchImage)
+            .append(matchName)
+            .append("<br>");
+        }
+      }
+      $("#match-modal .modal-body").html(modalContent);
+    }
+
+    // Initialize App
+    // ===============
+    getFriendsData();
+  });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
