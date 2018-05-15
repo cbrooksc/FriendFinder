@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3000;
+var port = process.env.PORT || 3000;
 
 // Sets up the Express app to handle data parsing
 app.use(
@@ -21,8 +21,7 @@ app.use(bodyParser.json());
 
 require("../routing/apiRoutes")(app);
 require("../routing/htmlRoutes")(app);
-require("../public/survey.html")(app);
-require("../public/home.html")(app);
+
 
 //Creating a listener for th port
 app.listen(PORT, function() {
